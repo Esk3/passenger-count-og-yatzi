@@ -1,0 +1,76 @@
+.yatzi-game {
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  border: 2px solid black;
+  padding: 1em;
+  align-items: center;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1 {
+  color: purple;
+}
+
+#terning-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.terning {
+  --size: 40px;
+  background-color: white;
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  font-size: var(--size);
+  box-shadow: 2px 2px gray;
+  border-radius: 4px;
+}
+
+.terning.valgt {
+  outline: 4px solid black;
+  background-color: gray;
+}
+
+#kast {
+  --background-color: blue;
+  --hover-color: blue;
+  padding: 1em 2em;
+  border-radius: 6px;
+  color: white;
+}
+
+.ferdig {
+  /*animation: ferdig 10s;*/
+  background-color: green;
+}
+
+.ferdig button {
+  background-color: gray;
+}
+
+.ferdig button:focus {
+  animation: none;
+}
+
+.ferdig,
+.ferdig * {
+  cursor: default;
+}
+
+@keyframes ferdig {
+  from {
+    background-color: blue;
+  }
+}
+
+.kast-tekst {
+  font-weight: 700;
+}

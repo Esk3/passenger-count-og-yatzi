@@ -1,0 +1,80 @@
+#passenger-counter {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  align-items: center;
+  background-color: gray;
+  border-radius: 1em;
+  gap: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#history-wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+ul {
+  display: flex;
+  gap: 1em;
+  list-style-type: "- ";
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#increment,
+#save {
+  --background-color: green;
+  --hover-color: green;
+  padding: 1em;
+}
+
+
+
+#decriment {
+  --background-color: red;
+  --hover-color: red;
+  padding: 1em;
+}
+
+#delete {
+  --background-color: red;
+  --hover-color: red;
+  padding: 1em;
+}
+
+
+/*reset default style*/
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font: inherit;
+}
+
+button {
+  background-color: var(--background-color);
+  border-radius: 1em;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:active {
+  animation: clicked 2s;
+}
+
+
+@keyframes clicked {
+  from {
+    outline: 2px solid black;
+  }
+}

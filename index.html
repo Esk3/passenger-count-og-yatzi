@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Passenger counter</title>
+  <link href="/style.css" rel="stylesheet">
+  <script src="script.js" type="module"> </script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Passenger</a></li>
+      <li><a href="yatzi.html">Yatzi</a></li>
+    </ul>
+  </nav>
+
+  <main id="passenger-counter">
+    <h1>People entered</h1>
+    <h2 id="count">0</h2>
+    <div>
+      <button type="button" id="increment">Increment +1</button>
+      <button type="button" id="decriment">-1</button>
+    </div>
+    <button type="button" id="save">Save</button>
+    <button type="button" id="delete">Delete</button>
+    <div id="history-wrapper">
+      <p>Previous entries:</p>
+      <ul id="history"> </ul>
+    </div>
+  </main>
+
+</body>
+
+</html>
